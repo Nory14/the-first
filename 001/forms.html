@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="author" content="azriz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="/gambar/tengkorak.jpg">
+   <title>input-text</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+<fieldset>
+    <legend>Identitas </legend>
+    <label for="Nama">Nama :</label> <br>
+    <input type="text" name="Nama" id="Nama"> <br>
+
+    <label for="tempat">Tempat Lahir :</label><br>
+    <input type="text" name="tempat" id="tempat"><br>
+
+    <label for="tanggal">Tanggal Lahir :</label> <br>
+    <input type="date" name="tanggal" id="tanggal" value="2010-03-14" min="2000-01-01" max="2030-12-31"><br>
+
+    <label for="email">Email :</label> <br>
+    <input type="email" name="email" id="email"> <br>
+
+    <label for="telepon">Telepon :</label> <br>
+    <input type="text" name="telepon" id="telepon" value="+62">
+</fieldset>
+
+<fieldset>
+    <legend>Alamat</legend>
+    <label for="jln">Jalan :</label> <br>
+    <input type="text" name="jln" id="jln"> <br>
+
+    <label for="kcm">Kecamatan :</label> <br>
+    <input type="text" name="kcm" id="kcm"> <br>
+
+    <label for="prv">Provinsi :</label> <br>
+    <input type="text" name="prv" id="prv"> <br>
+
+    <label for="kp">Kode Pos :</label> <br>
+    <input type="text" name="kp" id="kp">
+</fieldset>
+<fieldset>
+    <legend>Media Sosial</legend>
+    <label for="ig">Instagram :</label> <br>
+    <input type="url" name="ig" id="ig"> <br>
+
+    <label for="fb">Facebook :</label> <br>
+    <input type="url" name="fb" id="fb"><br>
+
+    <label for="twt">Twitter</label> <br>
+    <input type="url" name="twt" id="twt">
+</fieldset>
+<fieldset>
+    <legend>Kepribadian</legend>
+    <label for="hobi">Hobi :</label>
+    <select name="hobi" id="hobi">
+        <option value="nganggur" selected> nganggur</option>
+        <option value="membaca">Membaca</option>
+        <option value="Menyanyi">Menyanyi</option>
+        <option value="Memasak">Memasak</option>
+    </select> <br> <br>
+
+    <label for="kesukaan">Warna Favorit :</label> <br> <br>
+    <input type="color" name="kesukaan" id="kesukaan" value="#ff0000"> <br> <br>
+
+    <label for="foto">Pas Foto :</label> <br>
+    <input type="file" name="foto" id="foto"><br>
+</fieldset>
+<fieldset>
+    <legend>My Self</legend>
+    <label for="diri">Ceritakan Dirimu</label> <br>
+    <textarea name="diri" id="diri" cols="50" rows="10"></textarea>
+</fieldset>
+<br>
+<button type="reset">Reset</button>
+<button type="submit">Simpan</button>
+    </form>
+</body>
+</html>
