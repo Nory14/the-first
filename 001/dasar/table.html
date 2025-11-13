@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="author" content="azriz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar-Table</title>
+   <link rel="icon" href="/gambar/tengkorak.jpg">
+</head>
+<body>
+     <h1>Belajar table</h1>
+     untuk membuat table di html kita bisa memakai tag <b>table</b> dalam setelan default table tidak memiliki border, maka harus kita tambahkan dengan style css <br> <br>
+     ada beberapa tag yg terdapatpada table 
+     <b>thead</b> untuk mebuat header pada table <br>
+     <b>tbody</b> untuk membuagrup isi pada table <br>
+     <b>tfoot</b> untuk membuat group footer pada table <br>
+     <b>th</b> untuk membuat kolom pada header
+     <b>tr</b> untuk membuat baris pada table <br>
+     <b>td</b> untuk membuat kolom pada table <br>
+<br>
+     <img style="width: 25%; height: auto;" src="/gambar/codingan/table.png" alt="">
+     <br>
+     <br>
+     <h2>Colgroup</h2>
+     <p> kolom grup  dilakukan untuk membuat grup dari beberapa kolom, biasanya digunakan untuk memberi style pada kolom yang kita inginkan saja saja akan capek jika kita melakukannya satu satu pada tiap kolom maka dari itu kita menggabungkannya ke kolom grup</p>
+     <p>Kita bisa memakai tag <b>colgroup </b> untuk membuat grup kolom dan tag <b>col </b> untuk tiap kolom dan jika kita ingin menambahkan  style terhadap lebih dari satu kolom dengan style yang sama kita bisa memakai tag <b>span</b> disertai dengan sebuah nilai contohya : span= "2", maka berarti kolom pertama sampai angka yang tertulis pada nilai span, pada contoh nilai span berisi angka 2 maka berartibkolom 1 sampai kolom ke 2, jika nilaispan adalah 4 maka kolom satu sampai kolom ke empat, dan jika membuat tag <b>span lagi</b> maka kolom akan berlanjut pada hitungan kolom berikutnya contoh tag span kedua bertulis nilai 6 maka berarti kolom ke 5 sampai ke 6 karena nilai span yang bertama adalah 4
+    </p>
+     <p>Contoh Hasil :</p>
+
+     <table style="border: 3px solid black">
+    <colgroup>
+            <col span="2" style="background-color: blue;">
+            <col style="background-color: aqua;">
+    </colgroup>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>No Handphone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Anji</td>
+                <td>Palembang</td>
+                <td>0211111</td>
+            </tr>
+            <tr>
+                <td>nisa</td>
+                <td>lubuk linggau</td>
+                <td>0212222</td>
+            </tr>
+            <tr>
+                <td>Jodi</td>
+                <td>way kanan</td>
+                <td>0213333</td>
+            </tr>
+        </tbody>
+     </table>
+
+     <p>pada contoh diatas saya memakai nilai span 2 pada colgroup maka kolom 1 dan dua akan memakai style yang sama yaitu warna biru dengan cukuk memberi style pada colgroup tak perlu satu-satu pada kolom satu dan dua</p>
+     <br>
+     <h2> Colspan dan Rowspan</h2>
+     <p>kedua tag diatas digunakan untuk menggabungkan beberapakolom maupun baris, jika di ms word seperti fitur merge .Tag <b>colspan</b> untukmenggabungkan beberapa kolom sedangkan tag<b>rowspan</b> digunakan untuk menggabungkan beberapa baris tabel menjadi satu</p>
+     <br>
+     <img style="width: 40%; height: auto;" src="/gambar/codingan/table-colgrop.png" alt="">
+     <br>
+     <br>
+     <p>seperti yang terlihat saya menggabungkan kolom head tabel pertama dan kedua memakai tag <b>colspan</b> sehingga pada tabel head yang awalnya ada dua menjadi satu kesatuan </p>
+       <table style="border: 3px solid black">
+    <colgroup>
+            <col span="2" style="background-color: blue;">
+            <col span="4" style="background-color: aqua;">
+    </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2">Nama</th>
+                <th>Alamat</th>
+                <th>No Handphone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Anji</td>
+                <th>riguna</th>
+                <td>Palembang</td>
+                <td>0211111</td>
+            </tr>
+            <tr>
+                <td>nisa</td>
+                <th>sofyan</th>
+                <td>lubuk linggau</td>
+                <td>0212222</td>
+            </tr>
+            <tr>
+                <td>Jodi</td>
+                <th>mahendra</th>
+                <td>way kanan</td>
+                <td>0213333</td>
+            </tr>
+        </tbody>
+     </table>
+</body>
+</html>
