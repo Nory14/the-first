@@ -1,9 +1,10 @@
 header {background-color:#20c5b0;
-    padding: 30px;
+    padding: 0px;
     text-align: center;
     font-size: 35px;
     color:white
 }
+/* navigasi bar*/
 nav{background-color:#4ed8c7;
 padding: 10px;
 
@@ -24,12 +25,18 @@ nav li a {
 nav li :hover {
     background-color:skyblue
 }
-
+/* navigasi bar*/
 
 body{
     padding: 20px;
     width: auto;
     background-color:#20a594
     ;
+}
+p{
+    text-align: justify;
+}
+.subbab{
+    text-align: center;
 }
 
