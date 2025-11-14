@@ -6,14 +6,25 @@
     <meta name="author" content="azriz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="icon" href="/gambar/tengkorak.jpg">
+   <link rel="stylesheet" href="/001/indeks.css">
    <title>Materi Dasar</title>
 </head>
 <body>
-    <h1>MATERI DASAR HTML</h1>
+    <header>
+        <h1>Materi Dasar HTML</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/index.html" target="_self">Beranda</a></li>
+            <li><a href="/001/materi-dasar.html" target="_top">Materi</a></li>
+            <li><a href="">Kontak Kami</a></li>
+        </ul>
+    </nav>
+    
     <iframe src="/001/html-dasar.html" frameborder="20" height="300px" width="350px" ></iframe>
     <br><br><br>
     <section id="Entities">
-       <h1>Entities</h1>
+       <h1 class="subbab">Entities</h1>
     <p>Didalam html beberapa karakter sudah dipesan atau dikunci oleh html, sehingga kita tidak bisa gunakan pada tulisan teks biasa seperti <,/ atau > dan jika kita memaksakan untuk memasukannya maka halaman html akan rusan dan eror tidak sesuai apa yang kita inginkan karena akan dianggap sebagai tag html </p>
     <p>
         HTML Entity adalah karakter yang telah di pesan oleh html, ada banyak sekali karakternya maka disarankan untuk memakai simbol entitie nya,  sebenarnya tidak diwajibkan tetapi untuk lebih aman disarankan memakai simbol entiites daripada langsung mengetik karakternya, kalian bisa mencari simbol atau kode entitiesyang diiginkan di laman pencarian
@@ -26,7 +37,7 @@
     </section>
 <br>
 <section id="Break Line">
-  <h1>Break Line</h1>
+  <h1 class="subbab">Break Line</h1>
     penulisan didalam paragraph pada html fitur enter tidak akan dianggap enter oleh HTML itu sendiri, jika ingin membuat disarankan memakai paragraph yang terpisah dari paragraph awal, namun jika kita ingin memakai enter dalam paragraph kita bisa memakai tag <b>&lt;br&gt;</b> tag ini adalah void element jadi tidak memerlukan konten
     <br>
     <br>
@@ -52,7 +63,7 @@
 </section>
 
 <section id="Formating teks">
-   <h1>Formatting</h1>
+   <h1 class="subbab">Formatting</h1>
     <p>Didalam aplikasi pengolahan teks seperti ms word kita bisa memformat tulisan menjadi tebal atau miring sesuai kebutuhan begitu juga denganHTML kitavmerubah format teks yangingin kita tamoilkan pada halam menggunakan tag yang sesuai dengan yang kita inginkan</p>
     <ul>
         <li>&lt;b&gt; untukmenebalkan teks</li>
@@ -73,7 +84,7 @@
 </section>
 <section id="Color">
   
-       <h1>COLOR</h1>
+       <h1 class="subbab">COLOR</h1>
     dalam pemberian warna pada HTML, ia mendukung banyak format warna tidak hanya dengan nama saja warnanya&lpar;red,green,blue &rpar; , namun juga dengan format seperti HEX,RGB,HSL, dan lain-lain dengan begitu pemilihan warna akan lebih akurat sesuai warna yg dibutuhkan dibanding hanya memasukan nama warnanya saja.
     <br>
     untuk kode hex maupun rgb bisa mencari di gugel tiap kodenya atau bisa memakai <a href="https://colorpicker.me/" target="_blank">https://colorpicker.me</a> untuk memilih warna yang dibutuhkan.
@@ -91,7 +102,7 @@
 
      
   <section id="Membuat List">
-     <h1><b>Membuat list</b></h1>
+     <h1 class="subbab"><b>Membuat list</b></h1>
 <p>dalam pembuatan list di html ada 2 tag yang bisa kita gunakan yaitu ordered list dengan memakai tag <b>ol</b> dan unordered list dengan memakai tag <b>ul</b> yang di kedua isi list nya kita memakai tag <b>li</b> didalamnya <br>
 bedanya tag ordered list kita bisa mengubah lisnya sesuai apa yang kita inginkan dengan memakai angka,huruf,maupun angka romawi sedangkan unorderd list hanya memakai titik sebgai awalan list tak bisa diubah
 </p>
@@ -135,7 +146,7 @@ dalam penggunaan ordered list kita bisa mengganti awalan list sesuai yang di ing
   </section>
     
   <section id="Membuat Link">
-    <h1><b>Membuat Link</b></h1>
+    <h1 class="subbab"><b>Membuat Link</b></h1>
     dalam membuat web, biasanya kita akan membuat banyak sekali halaman html disinilah fungsi dari link untuk berpindah dari halaman satu ke halaman lainnya tanpa manual dengan cara mengetikannya di search web browser
     <br>
     dalam membuat link di html kita biasanya memakai tag <b>a</b> yang mana pada tag <b>a</b> memiliki beberapa atribute di didalamnya
@@ -160,8 +171,8 @@ dalam penggunaan ordered list kita bisa mengganti awalan list sesuai yang di ing
     </div>
   </section>
       
-    <section id="Measukan Gambar">
-       <h1>Memasukan Gambar</h1>
+    <section id="Memasukan Gambar">
+       <h1 class="subbab">Memasukan Gambar</h1>
 <div>
     <p>tag <b style="color: red;">img</b> digunakan untuk memassukan gambar atau foto kedalam web kita untuk memperindah tampilan yang akan kita buat <br>
         hampir semua format yg didukung oleh web browser bisa kita tamoilkan di halaman web html </p>
@@ -194,7 +205,7 @@ dalam penggunaan ordered list kita bisa mengganti awalan list sesuai yang di ing
     </section>
 
     <section id="Emoji">
-        <h1>Emoji</h1>
+        <h1 class="subbab">Emoji</h1>
     <p>html juga bisa menampilkan emoji di dalam halamannya, untuk penggunaannya kita harus memakai kode tertentu seperti memakai entities.</p>
     <img style="width: 50%;height: 50%;" src="/gambar/emoji.png" alt="">
     <br>
@@ -215,7 +226,7 @@ dalam penggunaan ordered list kita bisa mengganti awalan list sesuai yang di ing
     </section>
 
     <section id="Video">
-      <h1>Memasukan Video</h1>
+      <h1 class="subbab">Memasukan Video</h1>
     <p>
         selain gambar pada html juga bisa memunculkan video di halaman web yang kita buat,namun tidak semua jenis video bisa kita gunakandi web browser, biasanya format video yang digunakan adalah mp4,webm atau ogg untuk menampilkan video kita memakai tag <b>video</b>
     </p>
@@ -237,7 +248,7 @@ dalam penggunaan ordered list kita bisa mengganti awalan list sesuai yang di ing
     </section>
 
     <section id="Audio">
-       <h1>Audio</h1>
+       <h1 class="subbab">Audio</h1>
     Html juga mendukung untuk memasukan audio memakaitag <b>audio</b> penggunaanya mirip seperti penggunaan tag video 
     <br>
     <img style="width: 50%;" src="/gambar/codingan/audio.png" alt="">
@@ -250,7 +261,7 @@ dalam penggunaan ordered list kita bisa mengganti awalan list sesuai yang di ing
     </section>
 
     <section id="Inline Frame">
-       <h1>inline-frame</h1>
+       <h1 class="subbab">inline-frame</h1>
     <p>Inline Frame digunakan jika kita ingin menambahkan halaman web lain pada halaman web kita, untuk melakukannya kita bisa memakai tag <b>iframe</b> pada HTML</p>
     <br>
     <img style="width: 50%;" src="/gambar/codingan/iframe.png" alt="">
@@ -261,7 +272,7 @@ dalam penggunaan ordered list kita bisa mengganti awalan list sesuai yang di ing
     </section>
 
     <section id="table">
-       <h1>Belajar table</h1>
+       <h1 class="subbab">Belajar table</h1>
      untuk membuat table di html kita bisa memakai tag <b>table</b> dalam setelan default table tidak memiliki border, maka harus kita tambahkan dengan style css <br> <br>
      ada beberapa tag yg terdapatpada table 
      <b>thead</b> untuk mebuat header pada table <br>
@@ -354,5 +365,6 @@ dalam penggunaan ordered list kita bisa mengganti awalan list sesuai yang di ing
         </tbody>
      </table>
     </section>
+    
 </body>
 </html>

@@ -4,16 +4,6 @@ header {background-color:#20c5b0;
     font-size: 35px;
     color:white
 }
-article {padding: 20px;
-    width: auto;
-    background-color:#20a594
-    ; }
- 
-footer{background-color:#20c5b0;
-    padding: 10px;
-    text-align: center;
-    color: blue;
-}
 nav{background-color:#4ed8c7;
 padding: 10px;
 
@@ -33,5 +23,13 @@ nav li a {
 }
 nav li :hover {
     background-color:skyblue
+}
+
+
+body{
+    padding: 20px;
+    width: auto;
+    background-color:#20a594
+    ;
 }
 
