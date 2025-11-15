@@ -1,42 +1,148 @@
-header {background-color:#20c5b0;
-    padding: 0px;
-    text-align: center;
-    font-size: 35px;
-    color:white
+/* ====================================
+   1. BASE & TYPOGRAPHY
+   ==================================== */
+body {
+    /* Background netral agar konten lebih menonjol */
+    background-color: #f4f4f4; 
+    /* Font yang lebih mudah dibaca */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #333; /* Warna teks gelap */
+    line-height: 1.6; /* Jarak antar baris agar mudah dibaca */
+    padding: 0; /* Hapus padding body, gunakan pada elemen main */
 }
-/* navigasi bar*/
-nav{background-color:#4ed8c7;
-padding: 10px;
 
+h1, h2, h3 {
+    font-family: 'Arial Black', sans-serif;
+    color: #0d6d5f; /* Warna teal gelap */
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
+
+p {
+    text-align: justify;
+    letter-spacing: 0.2px; /* Dibuat sangat kecil agar tetap rapi */
+    margin-bottom: 15px; /* Jarak antar paragraf */
+}
+
+/* ====================================
+   2. LAYOUT & HEADER/NAVIGASI
+   ==================================== */
+
+/* Kontainer utama agar konten tidak terlalu lebar di layar besar */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white; /* Latar putih untuk konten utama */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #20c5b0;
+    padding: 20px 0; /* Padding vertikal yang lebih baik */
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 35px;
+    margin: 0;
+    color: white; /* Pastikan teks header berwarna putih */
+}
+
+/* Navigasi */
+nav {
+    background-color: #4ed8c7;
+}
+
 nav ul {
     list-style-type: none;
-    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Clearfix */
+    display: flex; /* Menggantikan float untuk layout modern */
+    justify-content: flex-start;
 }
-nav li{
-    float: left;
-}
+
 nav li a {
     display: block;
     text-align: center;
-    padding: 16px;
+    padding: 12px 16px; /* Padding sedikit dikurangi */
     text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s; /* Efek transisi halus */
 }
-nav li :hover {
-    background-color:skyblue
-}
-/* navigasi bar*/
 
-body{
-    padding: 20px;
-    width: auto;
-    background-color:#20a594
-    ;
+/* Targetkan link yang di-hover */
+nav li a:hover {
+    background-color: #72ece2; /* Warna hover yang lebih terang */
+    color: #0d6d5f;
 }
-p{
-    text-align: justify;
+
+/* ====================================
+   3. KOMPONEN KONTEN (Gambar, Tabel, dll)
+   ==================================== */
+
+.subbab {
+    text-align: left; /* Biarkan subbab rata kiri lebih natural */
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
 }
-.subbab{
+
+.center-img {
+    display: block;
+    /* Memberi jarak atas dan bawah, dan memusatkan */
+    margin: 20px auto; 
+    /* Agar gambar tidak pecah, gunakan max-width yang disesuaikan */
+    max-width: 90%; 
+    height: auto;
+}
+
+/* Contoh penyesuaian untuk gambar kode agar tidak terlalu besar */
+img[src*="codingan/"] {
+    max-width: 70%;
+}
+
+/* Styling untuk Hasil Teks atau Konten Khusus */
+.result-text, .result-text-formatting, .result-emoji {
+    padding: 10px 15px;
+    background-color: #fffacd; /* Warna kuning muda */
+    border-left: 5px solid #ffeb3b;
+    margin: 15px 0;
+    font-family: monospace;
+}
+
+/* Styling untuk Video dan Audio */
+.video-container {
     text-align: center;
+    margin: 20px 0;
+}
+.video-container video {
+    max-width: 100%;
+    height: auto;
 }
 
+/* Styling Tabel agar lebih rapi (untuk .styled-table di HTML Anda) */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+}
+
+.styled-table th, .styled-table td {
+    border: 2px solid black;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.styled-table thead th {
+    background-color: #0d6d5f;
+    color: #ffffff;
+    border-color: #0d6d5f;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3; /* Striping baris */
+}

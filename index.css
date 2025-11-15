@@ -2,18 +2,12 @@ header {background-color:#20c5b0;
     padding: 30px;
     text-align: center;
     font-size: 35px;
-    color:white
+    color:white;
 }
-article {padding: 20px;
-    width: auto;
-    background-color:#20a594
-    ; text-align: justify; }
+
  
-footer{background-color:#20c5b0;
-    padding: 10px;
-    text-align: center;
-    color: blue;
-}
+
+/*bar navigasi*/
 nav{background-color:#4ed8c7;
 padding: 10px;
 
@@ -34,4 +28,20 @@ nav li a {
 nav li :hover {
     background-color:skyblue
 }
+/*bar navigasi*/
 
+/*artikel*/
+article {padding: 20px;
+    width: auto;
+    background-color:#20a594
+    ; text-align: justify; }
+p{letter-spacing: 1px;
+
+/*artikel*/
+
+/* footer*/
+footer{background-color:#20c5b0;
+    padding: 10px;
+    text-align: center;
+    color: blue;}
+ /* footer*/
