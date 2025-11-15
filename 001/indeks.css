@@ -2,26 +2,26 @@
    1. BASE & TYPOGRAPHY
    ==================================== */
 body {
-    /* Background netral agar konten lebih menonjol */
+    
     background-color: #f4f4f4; 
-    /* Font yang lebih mudah dibaca */
+  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    color: #333; /* Warna teks gelap */
-    line-height: 1.6; /* Jarak antar baris agar mudah dibaca */
-    padding: 0; /* Hapus padding body, gunakan pada elemen main */
+    color: #333;
+    line-height: 1.6; 
+    padding: 0; 
 }
 
 h1, h2, h3 {
     font-family: 'Arial Black', sans-serif;
-    color: #0d6d5f; /* Warna teal gelap */
+    color: #0d6d5f; 
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
 p {
     text-align: justify;
-    letter-spacing: 0.2px; /* Dibuat sangat kecil agar tetap rapi */
-    margin-bottom: 15px; /* Jarak antar paragraf */
+    letter-spacing: 0.2px;
+    margin-bottom: 15px;
 }
 
 /* ====================================
@@ -33,13 +33,13 @@ main {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white; /* Latar putih untuk konten utama */
+    background-color: white; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
     background-color: #20c5b0;
-    padding: 20px 0; /* Padding vertikal yang lebih baik */
+    padding: 20px 0; 
     text-align: center;
     color: white;
 }
@@ -47,7 +47,7 @@ header {
 header h1 {
     font-size: 35px;
     margin: 0;
-    color: white; /* Pastikan teks header berwarna putih */
+    color: white; 
 }
 
 /* Navigasi */
@@ -75,7 +75,7 @@ nav li a {
 
 /* Targetkan link yang di-hover */
 nav li a:hover {
-    background-color: #72ece2; /* Warna hover yang lebih terang */
+    background-color: #72ece2; 
     color: #0d6d5f;
 }
 
@@ -84,16 +84,15 @@ nav li a:hover {
    ==================================== */
 
 .subbab {
-    text-align: left; /* Biarkan subbab rata kiri lebih natural */
+    text-align: left; 
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
 }
 
 .center-img {
     display: block;
-    /* Memberi jarak atas dan bawah, dan memusatkan */
     margin: 20px auto; 
-    /* Agar gambar tidak pecah, gunakan max-width yang disesuaikan */
+   
     max-width: 90%; 
     height: auto;
 }
@@ -103,10 +102,10 @@ img[src*="codingan/"] {
     max-width: 70%;
 }
 
-/* Styling untuk Hasil Teks atau Konten Khusus */
+
 .result-text, .result-text-formatting, .result-emoji {
     padding: 10px 15px;
-    background-color: #fffacd; /* Warna kuning muda */
+    background-color: #fffacd;
     border-left: 5px solid #ffeb3b;
     margin: 15px 0;
     font-family: monospace;
@@ -122,10 +121,10 @@ img[src*="codingan/"] {
     height: auto;
 }
 
-/* Styling Tabel agar lebih rapi (untuk .styled-table di HTML Anda) */
+
 .styled-table {
     width: 100%;
-    border-collapse: collapse;
+    border: 2px solid black;
     margin: 20px 0;
     font-size: 0.9em;
     min-width: 400px;
@@ -140,11 +139,7 @@ img[src*="codingan/"] {
 .styled-table thead th {
     background-color: #0d6d5f;
     color: #ffffff;
-    border-color: #0d6d5f;
-}
+    border-color: #0d6d5f;}
 
-.styled-table tbody tr:nth-child(even) {
-    background-color: #f3f3f3; /* Striping baris */
-}
 
 
